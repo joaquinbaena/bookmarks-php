@@ -1,0 +1,69 @@
+1:N
+N:M
+
+Pregutas->Respuestas
+Departamentos->Profesores
+
+Preguntas(id, pregunta, ...)
+            1,pregunta1
+
+Respuestas(id, respuesta, idPregunta, ...)
+            1, respuesta1, 1
+            2, respuesta2, 1
+
+
+clase Preguntas
+   id
+   pregunta
+   ...
+   respuestas->array()
+
+
+   getById()
+
+
+
+
+clase Respuestas
+    id
+    respuesta
+    ...
+    idPregunta
+
+
+
+
+
+
+Vista
+
+Preguntas      Nueva
+
+1          Pregunta 1           show, edti, del
+2          Pregunta 2           show, edit, del
+
+
+vista show
+
+
+
+show/3
+
+ll
+getPreguntaById(3)           se define            en el modelo
+
+
+
+
+insert
+
+pregunta:pregunta1_
+
+respuesta:r1__
+respuetta:_r2__
+Respuesta:_r3__
+
+
+insert into (preguntas)
+
+insert into (respuetas)
